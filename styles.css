@@ -101,11 +101,15 @@
     display: block;
     text-align: left;
   }
-  /* responsive images */
-  .footer-height{
-    height: 35vh;
-  }
-  .custom-height {
-    height: 50vh;
-  }
 }
+
+
+ /* responsive images */
+ @media only screen and (min-width: 768px) {
+ .footer-height{
+  height: 35vh;
+}
+.custom-height {
+  height: 50vh;
+}
+ }
