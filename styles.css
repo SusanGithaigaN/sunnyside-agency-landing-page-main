@@ -1,9 +1,18 @@
 .custom-height {
-  height: 90vh;
+  /* height: 70vh; */
+}
+.arrow{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-btn:hover{
+  background-color: hsl(200, 86%, 67%);
 }
 
 .footer-height {
-  height: 60vh;
+  height: 80vh;
 }
 
 #footer {
@@ -104,12 +113,17 @@
 }
 
 
- /* responsive images */
- @media only screen and (min-width: 768px) {
- .footer-height{
-  height: 35vh;
+/* responsive images */
+@media only screen and (min-width: 768px) {
+  .footer-height {
+    /* height: 35vh; */
+  }
+
+  .custom {
+    
+  }
+
+  .centered-text{
+    padding-top: 35% !important;
+  }
 }
-.custom-height {
-  height: 50vh;
-}
- }
