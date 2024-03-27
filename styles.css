@@ -1,5 +1,5 @@
 .custom-height {
-  /* height: 70vh; */
+  height: 90vh;
 }
 .arrow{
   position: absolute;
@@ -12,7 +12,7 @@
 }
 
 .footer-height {
-  height: 80vh;
+  /* height: 64vh; */
 }
 
 #footer {
@@ -29,28 +29,29 @@
 }
 
 /* THIS HOVER EFFECT DOES NOT WORK */
-@layer utilities {
-  .yellow-underline {
-    position: relative;
-    display: inline-block;
-  }
+/* Custom CSS */
+.yellow-underline {
+  position: relative;
+  display: inline-block;
+}
 
-  .yellow-underline::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: hsl(51, 100%, 49%);
-    transform-origin: bottom left;
-    transform: scaleX(0);
-    transition: transform 0.3s ease, height 0.3s ease;
-  }
+.yellow-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; /* Adjusted for better alignment */
+  left: 0;
+  width: max-content; /* Adjusted */
+  height: 2px;
+  background-color: hsl(51, 100%, 49%);
+  transform-origin: bottom left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease, width 0.3s ease; /* Adjusted */
+}
 
-  .yellow-underline:hover::after {
-    transform: scaleX(1);
-  }
+/* Adjusted hover effect */
+.yellow-underline:hover::after {
+  transform: scaleX(1);
+  width: 100%; /* Adjusted */
 }
 
 .navbar .icon {
